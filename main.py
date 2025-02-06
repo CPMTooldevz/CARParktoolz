@@ -11,7 +11,7 @@ from rich.style import Style
 import pystyle
 from pystyle import Colors, Colorate
 
-from telmun import Telmuns
+from cpmtooldevz import CPMTooldevz
 
 __CHANNEL_USERNAME__ = "TelmunnTest"
 __GROUP_USERNAME__   = "TelmunnTestChat"
