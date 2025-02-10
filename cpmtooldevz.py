@@ -228,12 +228,12 @@ class CPMTooldevz:
         return response_decoded.get("ok")
 
     def car_set_steering_angle(self, car_id, angle):
-    payload = {
+        payload = {
         "account_auth": self.auth_token,
         "car_id": car_id,
         "steering_angle": angle
         }
-        params = { "key": self.access_key }
+        params = {"key": self.access_key}
         response = requests.post(f"{__ENDPOINT_URL__}/car_set_steering_angle", params=params, data=payload)
         response_decoded = response.json()
         return response_decoded.get("ok")
