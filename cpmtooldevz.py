@@ -227,7 +227,7 @@ class CPMTooldevz:
         response_decoded = response.json()
         return response_decoded.get("ok")
 
-     def car_set_steering_angle(self, car_id, angle):
+    def car_set_steering_angle(self, car_id, angle):
         payload = {
         "account_auth": self.auth_token,
         "car_id": car_id,
