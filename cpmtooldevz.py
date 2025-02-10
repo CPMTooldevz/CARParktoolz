@@ -237,17 +237,6 @@ class CPMTooldevz:
 
         response = requests.post(f"{__ENDPOINT_URL__}/car_set_steering_angle", params=params, data=payload)
 
-        # Debugging: Print response before parsing JSON
-        print("Response Status Code:", response.status_code)
-        print("Response Text:", response.text)  # Check raw response content
-  
-        if response.status_code != 200:
-        print("Error: API returned an error.")
-        return False
-
      try:
         response_decoded = response.json()
-        return response_decoded.get("ok", False)
-        except requests.exceptions.JSONDecodeError:
-        print("Error: Failed to decode JSON. Response might not be valid JSON.")
-        return False
+        return response_decoded.get
