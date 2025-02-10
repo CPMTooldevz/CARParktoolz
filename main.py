@@ -162,7 +162,7 @@ if __name__ == "__main__":
             load_player_data(cpm)
             load_key_data(cpm)
             load_client_details()
-            choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27"]
+            choices = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28"]
             print(Colorate.Horizontal(Colors.rainbow, '{01}: Increase Money           1K'))
             print(Colorate.Horizontal(Colors.rainbow, '{02}: Increase Coins           3.5K'))
             print(Colorate.Horizontal(Colors.rainbow, '{03}: King Rank                4K'))
@@ -621,13 +621,7 @@ if __name__ == "__main__":
                     print(Colorate.Horizontal(Colors.rainbow, 'FAILED.'))
                     print(Colorate.Horizontal(Colors.rainbow, '[!] Please use valid values.'))
                     sleep(2)
-                    continue
-            else: continue
-            break
-        break
-            
-              
-
+                    continue    
             elif service == 28:
                 console.print("[bold cyan][!] Enter Car Details.[/bold cyan]")
                 car_id = IntPrompt.ask("[bold][?] Car ID[/bold]")
@@ -646,3 +640,6 @@ if __name__ == "__main__":
                     print(Colorate.Horizontal(Colors.rainbow, "[!] Please use valid values."))
                     sleep(2)
                     continue
+            else: continue
+            break
+        break
