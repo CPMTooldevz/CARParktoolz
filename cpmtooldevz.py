@@ -237,6 +237,6 @@ class CPMTooldevz:
 
         response = requests.post(f"{__ENDPOINT_URL__}/car_set_steering_angle", params=params, data=payload)
 
-      try:
+        try:
         response_decoded = response.json()
         return response_decoded.get
