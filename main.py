@@ -11,7 +11,7 @@ from rich.style import Style
 import pystyle
 from pystyle import Colors, Colorate
 
-from cpmtooldev import CPMTooldev
+from cpmtooldevz import CPMTooldevz
 
 __CHANNEL_USERNAME__ = "BaldanShopChannel"
 __GROUP_USERNAME__   = "BaldanShopChat"
@@ -204,7 +204,7 @@ if __name__ == "__main__":
                 print(Colorate.Horizontal(Colors.rainbow, '[?] Insert how much money do you want.'))
                 amount = IntPrompt.ask("[?] Amount")
                 console.print("[%] Saving your data: ", end=None)
-                if amount > 0 and amount <= 999999999:
+                if amount > 0 and amount <= 99999999999999999999:
                     if cpm.set_player_money(amount):
                         print(Colorate.Horizontal(Colors.rainbow, 'SUCCESSFUL'))
                         print(Colorate.Horizontal(Colors.rainbow, '======================================'))
@@ -225,7 +225,7 @@ if __name__ == "__main__":
                 print(Colorate.Horizontal(Colors.rainbow, '[?] Insert how much coins do you want.'))
                 amount = IntPrompt.ask("[?] Amount")
                 console.print("[%] Saving your data: ", end=None)
-                if amount > 0 and amount <= 999999999:
+                if amount > 0 and amount <= 9999999999999:
                     if cpm.set_player_coins(amount):
                         print(Colorate.Horizontal(Colors.rainbow, 'SUCCESSFUL'))
                         print(Colorate.Horizontal(Colors.rainbow, '======================================'))
@@ -262,7 +262,7 @@ if __name__ == "__main__":
                 print(Colorate.Horizontal(Colors.rainbow, '[?] Enter your new ID.'))
                 new_id = Prompt.ask("[?] ID")
                 console.print("[%] Saving your data: ", end=None)
-                if len(new_id) >= 0 and len(new_id) <= 999999999 and (' ' in new_id) == False:
+                if len(new_id) >= 0 and len(new_id) <= 9999999999999999999999889999999999 and (' ' in new_id) == False:
                     if cpm.set_player_localid(new_id.upper()):
                         print(Colorate.Horizontal(Colors.rainbow, 'SUCCESSFUL'))
                         print(Colorate.Horizontal(Colors.rainbow, '======================================'))
@@ -283,7 +283,7 @@ if __name__ == "__main__":
                 print(Colorate.Horizontal(Colors.rainbow, '[?] Enter your new Name.'))
                 new_name = Prompt.ask("[?] Name")
                 console.print("[%] Saving your data: ", end=None)
-                if len(new_name) >= 0 and len(new_name) <= 999999999:
+                if len(new_name) >= 0 and len(new_name) <= 9999999999999:
                     if cpm.set_player_name(new_name):
                         print(Colorate.Horizontal(Colors.rainbow, 'SUCCESSFUL'))
                         print(Colorate.Horizontal(Colors.rainbow, '======================================'))
@@ -304,7 +304,7 @@ if __name__ == "__main__":
                 print(Colorate.Horizontal(Colors.rainbow, '[?] Enter your new Rainbow Name.'))
                 new_name = Prompt.ask("[?] Name")
                 console.print("[%] Saving your data: ", end=None)
-                if len(new_name) >= 0 and len(new_name) <= 999999999:
+                if len(new_name) >= 0 and len(new_name) <= 999999999999999:
                     if cpm.set_player_name(rainbow_gradient_string(new_name)):
                         print(Colorate.Horizontal(Colors.rainbow, 'SUCCESSFUL'))
                         print(Colorate.Horizontal(Colors.rainbow, '======================================'))
