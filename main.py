@@ -529,7 +529,7 @@ if __name__ == "__main__":
                     continue
             elif service == 24: # Unlocking Wheels
                console.print("[bold cyan][%] Unlocking Wheels[/bold cyan]: ", end=None)
-              if cpm.unlock_wheels():
+               if cpm.unlock_wheels():
                     console.print("[bold green]SUCCESSFUL.[/bold green]")
                     console.print("==================================")
                     answ = Prompt.ask("[bold cyan][?] Do You want to Exit ?[/bold cyan]", choices=["y", "n"], default="n")
